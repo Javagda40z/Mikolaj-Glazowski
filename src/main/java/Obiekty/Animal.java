@@ -1,6 +1,7 @@
 package Obiekty;
 
-public interface Animal {
+public interface Animal extends Movable {
 
     void makeSound();
+
 }
