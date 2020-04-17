@@ -41,7 +41,7 @@ public class HomeworkRegex {
 
     }
 
-    public static void czyCiagJestZdaniem (String ciagZnakowZdania){
+    public static void czyCiagJestZdaniem (String ciagZnakowZdania){ //to nie daje poprawnego wyniku
         System.out.println(ciagZnakowZdania.matches("^[A-Z0-9]{1}\\w+(\\s\\w+)*[.]$"));
     }
 

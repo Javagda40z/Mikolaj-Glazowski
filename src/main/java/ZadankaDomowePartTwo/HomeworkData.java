@@ -24,7 +24,7 @@ public class HomeworkData {
         System.out.println(pierwszaData.isAfter(drugaData));//zadanie 5
         System.out.println(samaData.plus(Period.ofDays(dni)));// zadanie 6\
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm, dd-MM-yyyy");
-        System.out.println(dataCzas.format(formatter));
+        System.out.println(dataCzas.format(formatter)); //zadanie 8
 
 
 

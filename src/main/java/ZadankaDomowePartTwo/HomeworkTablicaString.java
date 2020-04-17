@@ -9,9 +9,9 @@ public class HomeworkTablicaString {
     public static void main(String[] args) {
         String[] tablicaImion = new String[]{"mateusz", "kasia", "adam", "tomek", "andrzej"};
 
-//        zawartoscOrazRozmiar(tablicaImion);
-//        zmianaPierwszegoImienia(tablicaImion);
-//        zawartoscOrazRozmiarPoRedukcji(tablicaImion);
+        zawartoscOrazRozmiar(tablicaImion);
+        zmianaPierwszegoImienia(tablicaImion);
+        zawartoscOrazRozmiarPoRedukcji(tablicaImion);
         zamianiaPierwszychLiterNaWielkie(tablicaImion);
 
 
@@ -33,7 +33,7 @@ public class HomeworkTablicaString {
         System.out.println(tablicaPoRedukcji.length);
     }
 
-    public static String[] zamianiaPierwszychLiterNaWielkie (String[] tablicaZMalymi){
+    public static String[] zamianiaPierwszychLiterNaWielkie (String[] tablicaZMalymi){ //nie wiem, dlaczego to nie zwraca tablicy
         String[] tablicaZWielkimi = new String[0];
         for (String elementTablicy:tablicaZMalymi) {
             elementTablicy = elementTablicy.substring(0,1).toUpperCase() + elementTablicy.substring(1);
