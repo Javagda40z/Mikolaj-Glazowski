@@ -9,9 +9,9 @@ public class HomeworkTablicaString {
     public static void main(String[] args) {
         String[] tablicaImion = new String[]{"mateusz", "kasia", "adam", "tomek", "andrzej"};
 
-        zawartoscOrazRozmiar(tablicaImion);
-        zmianaPierwszegoImienia(tablicaImion);
-        zawartoscOrazRozmiarPoRedukcji(tablicaImion);
+//        zawartoscOrazRozmiar(tablicaImion);
+//        zmianaPierwszegoImienia(tablicaImion);
+//        zawartoscOrazRozmiarPoRedukcji(tablicaImion);
         zamianiaPierwszychLiterNaWielkie(tablicaImion);
 
 
@@ -33,16 +33,13 @@ public class HomeworkTablicaString {
         System.out.println(tablicaPoRedukcji.length);
     }
 
-    public static void zamianiaPierwszychLiterNaWielkie (String[] tablicaZWielkimi){
-        String reeegex = "^[a-z]";
-        for (String elementTablicy:tablicaZWielkimi) {
-            Character pierwszaLitera = elementTablicy.charAt(0);
-            if (pierwszaLitera.toString().matches(reeegex)){
-                pierwszaLitera.toString().toUpperCase();
-            }
+    public static String[] zamianiaPierwszychLiterNaWielkie (String[] tablicaZMalymi){
+        String[] tablicaZWielkimi = new String[0];
+        for (String elementTablicy:tablicaZMalymi) {
+            elementTablicy = elementTablicy.substring(0,1).toUpperCase() + elementTablicy.substring(1);
+            tablicaZWielkimi = ArrayUtils.add(tablicaZWielkimi, elementTablicy);
         }
-
-
+        return tablicaZWielkimi;
     }
 
 
