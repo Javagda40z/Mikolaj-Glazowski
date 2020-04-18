@@ -21,7 +21,7 @@ public class TollCalculator {
         parkingTime = parkingTime + RandomAmountOfHours.randomBetween(0,48);
 
         //
-        if (parkingTime<1 || GasType.ELECTRIC.equals(vehicle.getGasType())){
+        if (parkingTime<1){
             return 0;
         }
         double multiplier = calculateMultiplier(vehicle);
@@ -42,6 +42,19 @@ public class TollCalculator {
                 break;
             case TRUCK:
                 multiplier = multiplier*2;
+                break;
+            default:
+                break;
+        }
+        switch (vehicle.getGasType()){
+            case ELECTRIC:
+                multiplier = multiplier *0;
+                break;
+            case COMBUSTION:
+                multiplier = multiplier *1.5;
+                break;
+            case LPG:
+                multiplier = multiplier*1;
                 break;
             default:
                 break;
