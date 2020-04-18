@@ -12,6 +12,7 @@ public class ArytmetycznyCiag {
         int roznicaCiagu = scanner.nextInt();
 
         System.out.println(arytmetycznyCiag(wyrazPierwszy, dlugosc, roznicaCiagu));
+        System.out.println(sprawdzCiagCzyArytmetyczny(arytmetycznyCiag(wyrazPierwszy, dlugosc, roznicaCiagu)));
 
 
     }
@@ -25,6 +26,13 @@ public class ArytmetycznyCiag {
         return arytmetycznyCiag;
 
     }
-
+    public static boolean sprawdzCiagCzyArytmetyczny (List<Integer> ciag){
+        for (int i = 1; i +1 < ciag.get(i+1); i++) {
+            if ((ciag.get(i-1) - ciag.get(i+1))/2 != ciag.get(i)){
+                return false;
+            }
+        }
+        return true;
+    }
 
 }

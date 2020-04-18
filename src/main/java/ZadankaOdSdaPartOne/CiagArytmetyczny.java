@@ -11,6 +11,7 @@ public class CiagArytmetyczny {
 //        System.out.println(lista);
         System.out.println(arytmetyczny(5, 1, 2));
 
+
     }
     public static List<Integer> arytmetyczny(int dlugosc, int pierwszyWyraz,int roznicaWyrazow){
 
@@ -20,6 +21,15 @@ public class CiagArytmetyczny {
             ciagArytmetyczny.add(pierwszyWyraz + i*roznicaWyrazow);
             }
         return ciagArytmetyczny;
+    }
+
+    public static boolean sprawdzCiagCzyArytmetyczny (List<Integer> ciag){
+        for (int i = 1; i +1 < ciag.get(i+1); i++) {
+            if ((ciag.get(i+1) - ciag.get(i-1))/2 != ciag.get(i)){
+                return false;
+            }
+        }
+        return true;
     }
 
 
