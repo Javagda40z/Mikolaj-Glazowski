@@ -1,8 +1,6 @@
-package ZadankaDomowePartTwo;
+package ZadankaDomowePartTwo.HomeworkTablice;
 
 import org.apache.commons.lang3.ArrayUtils;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class HomeworkTablicaString {
@@ -13,6 +11,7 @@ public class HomeworkTablicaString {
         zmianaPierwszegoImienia(tablicaImion);
         zawartoscOrazRozmiarPoRedukcji(tablicaImion);
         zamianiaPierwszychLiterNaWielkie(tablicaImion);
+
 
 
     }
@@ -33,13 +32,13 @@ public class HomeworkTablicaString {
         System.out.println(tablicaPoRedukcji.length);
     }
 
-    public static String[] zamianiaPierwszychLiterNaWielkie (String[] tablicaZMalymi){ //nie wiem, dlaczego to nie zwraca tablicy
+    public static void zamianiaPierwszychLiterNaWielkie (String[] tablicaZMalymi){
         String[] tablicaZWielkimi = new String[0];
         for (String elementTablicy:tablicaZMalymi) {
             elementTablicy = elementTablicy.substring(0,1).toUpperCase() + elementTablicy.substring(1);
             tablicaZWielkimi = ArrayUtils.add(tablicaZWielkimi, elementTablicy);
         }
-        return tablicaZWielkimi;
+        WypisanieTablicy.wypisanieTablicyString(tablicaZWielkimi);
     }
 
 
