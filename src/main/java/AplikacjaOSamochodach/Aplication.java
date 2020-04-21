@@ -5,6 +5,20 @@ import AplikacjaOSamochodach.TollGate.TollGate;
 import AplikacjaOSamochodach.TollGate.VehicleRegistration;
 import AplikacjaOSamochodach.Vehicle.*;
 
+
+
+//Sprawdzanie czy jest miejsce
+//SPrawdzanie czy rejestracja jest poprawna - statyczna metoda
+//Stworz nowy kalkulator oplat
+//Nie pozwalac na podmiane kalkulatora jezeli ktos jest na parkingu
+//Stosowac stary kalkulator do pojazdow ktore wjechaly przed podmiana
+//Zmienna oplata w zaleznosci od godziny
+//Zmienna oplata w zaleznosci od paliwa
+//Wydawanie reszty
+//Wzywanie policji?
+//Zrobienie lepszego raportu - np wysylanie maila albo generowanie do pliku
+//Co zostalo na parkingu?
+
 public class Aplication {
     public static void main(String[] args) {
         VehicleRegistration vehicleRegistration = new VehicleRegistration();
