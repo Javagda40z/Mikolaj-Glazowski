@@ -6,10 +6,10 @@ public class Odcinek extends Punkt {
         super(coorX, coorY);
     }
 
-    public static double dlugosc(){
+    public static double dlugosc() {
         int a = coorX;
         int b = coorY;
-        return Math.sqrt(a^2 + b^2);
+        return Math.sqrt(a * a + b * b);
     }
 
 }
