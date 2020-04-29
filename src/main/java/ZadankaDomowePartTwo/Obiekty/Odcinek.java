@@ -7,9 +7,7 @@ public class Odcinek extends Punkt {
     }
 
     public static double dlugosc() {
-        int a = coorX;
-        int b = coorY;
-        return Math.sqrt(a * a + b * b);
+        return Math.sqrt(coorX * coorX + coorY * coorY);
     }
 
 }

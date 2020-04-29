@@ -8,6 +8,9 @@ public class Rysowanie extends Odcinek {
     }
 
     public static void main(String[] args) {
+        System.out.println(coorX);
+        System.out.println(coorY);
+        System.out.println(dlugosc());
         System.out.print("|");
         int i = 0;
         while (i < (int) dlugosc()) {
