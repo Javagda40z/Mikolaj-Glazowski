@@ -10,7 +10,7 @@ public enum Operation {
             case MINUS:
                 return a - b;
             default:
-                throw new AssertionError("nieznama operacja " + this);
+                throw new AssertionError("Nieznana operacja " + this);
 
         }
     }
